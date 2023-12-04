@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"  href="/assets/main.css">
+</head>
+<body>
+    
+    <div class="container-fluid w-100  h-100 ">
+ 
+        <div class="row align-items-center bg-black ">
+            <div class="col-5 p-3">
+                <div class="btntop d-flex w-100  px-5 mb-3 justify-content-between ">
+                    <button class="btn btn-primary ">SWAP</button>
+                    <button class="btn btn-primary ">SWAP</button>
+                </div>
+
+                <div class="">
+                    <div class="imgMain">
+                        <div class="imgMainBg">
+                            <div class="secLayer">
+                                <div class="secLayerBg d-flex align-items-center ">
+                                    <img class="thiImg" src="/images/brook no back.png" alt="">
+                                    <h1 class="headname">
+                                        BROOK
+                                    </h1>
+
+                                </div>
+                            </div>
+
+                            
+                        <div class="mainCard  mt-3 ">
+                            <div class="mainBg d-flex justify-content-between  overflow-y-visible">
+
+                                <img class="logomen" src="/images/icon no background.png" alt="">
+                                <div class="p-3">
+                                    <h5 lass="m-0">BROOK</h5>
+                                    <p class="m-0">The soulful skeleton with an afro to die</p>
+                                    <p class="display-4 m-0 fw-bold">ALIVE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>  
+
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col menu p-0 text-white">
+                <div class="colBg p-3">
+                    <h2 class="fw-bold">METRIC DATA</h2>
+                    <hr>
+                    <div class="d-flex w-100 justify-content-around ">
+                        <div class="d-flex flex-column containerbox">
+                            <div >
+                                <div class="boxbg">
+                                    <div class="in">
+                                        <p class="m-0 ">DOUBLOONS VALUE</p>
+                                        <h3>$0.000000143</h3>
+                                    </div>
+                                    <hr>
+                                    <div class="in">
+                                        <p class="m-0">TIDAL SHIFTS</p>
+                                        <h3>0.00%</h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button class=" btn btn-white">VIEW GRAPH</button>
+                            <div class="tab mt-3">
+                                <div class="in d-flex justify-content-between align-items-center ">
+                                    <div>
+                                        <p class="m-0 ">SUNKEN TREASURE</p>
+                                        <h3 class="m-0">0.13 ETH</h3>
+                                    </div>
+                                    <div>
+                                        <img width="40" height="40" src="https://img.icons8.com/external-black-fill-lafs/64/FFFFFF/external-Ethereum-cryptocurrency-black-fill-lafs.png" alt="external-Ethereum-cryptocurrency-black-fill-lafs"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-white boxbg ">
+                            <canvas id="okcanvas" style="height:30vh;width:100%;" >
+                                <p>Hello Fallback World</p>
+                            </canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex w-100 justify-content-around">
+
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                            <div class="circle">10s</div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js" integrity="sha512-6HrPqAvK+lZElIZ4mZ64fyxIBTsaX5zAFZg2V/2WT+iKPrFzTzvx6QAsLW2OaLwobhMYBog/+bvmIEEGXi0p1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    
+    (async function() {
+      const dates = ["9-1-23", "13-3-23", "15-5-23", "17-7-23", "18-9-23", "20-11-23"];
+    
+      // Manually specify data points between the static dates
+      const dataPoints = [150, 200, 250, 180, 220, 300, 400, 350, 250, 200, 180, 220, 280, 320];
+    
+      // Combine static dates and data points
+      const allDates = dates.reduce((acc, date) => {
+        acc.push(date);
+        for (let i = 0; i < 4; i++) {
+          acc.push('');
+        }
+        return acc;
+      }, []);
+    
+      // Combine static data and data points
+      const allData = dataPoints.reduce((acc, data) => {
+        acc.push(data);
+        for (let i = 0; i < 4; i++) {
+          acc.push(dataPoints[i + 1]); // Assuming each year has a corresponding data point
+        }
+        return acc;
+      }, []);
+    
+      const ctx = document.getElementById('okcanvas').getContext('2d');
+      const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
+      gradient.addColorStop(0, '#9a0dfd');
+      gradient.addColorStop(1, '#0d6efd');
+    
+      new Chart(
+        document.getElementById('okcanvas'),
+        {
+          type: 'line',
+          data: {
+            labels: allDates,
+            datasets: [
+              {
+                label: 'Dollars Spent',
+                data: allData,
+                borderColor: '#fff',
+                tension: 0.1,
+                borderWidth: 2,
+                pointBackgroundColor: '#fff',
+                pointRadius: 0,
+                fill: true,
+                backgroundColor: '#aaa',
+              },
+            ],
+          },
+          options: {
+            scales: {
+              x: {
+                type: 'category',
+                ticks: {
+                  autoSkip: false, // Prevent automatic skipping of labels
+                  maxRotation: 0, // Set rotation angle to 0 degrees
+                  minRotation: 0, // Set rotation angle to 0 degrees
+                },
+                grid: {
+                  display: false, // Hide X-axis grid lines
+                },
+              },
+              y: {
+                display: true, // Hide Y-axis
+              },
+            },
+            layout: {
+              padding: {
+                top: 0,
+                bottom: 0,
+              },
+            },
+            plugins: {
+              legend: {
+                display: false, // Hide legend
+              },
+            },
+          },
+        }
+      );
+    })
+    
+    ();
+     
+    </script> 
+</body>
+</html>

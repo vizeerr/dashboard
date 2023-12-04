@@ -1,0 +1,173 @@
+body{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imgMain{
+    background: url(/images/back\ left.png);
+    height: 85vh;
+    width: 100%;
+    border-radius: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.col-5{
+    width: 38% !important;
+}
+
+.imgMainBg{
+    background: linear-gradient(to bottom, #212121e0  , #0c0c0c);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-radius: 28px;
+    padding: 30px;
+}
+
+.secLayer{
+    background: url(/images/main\ image\ background\ flipped.jpg);
+    width: 100%;
+    height: 55vh;
+    border-radius: 28px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secLayerBg{
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.438)  , #0c0c0c);
+    width: 100%;
+    height: 100%;
+    /* filter: grayscale(1); */
+    backdrop-filter: grayscale(10px);
+    border-radius: 28px;
+    overflow-y: visible;
+    /* overflow-x: hidden; */
+    /* position: relative; */
+}
+
+.thiLayer{
+    background: url(/images/brook\ no\ back.png);
+    width: 100%;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.thiLayerBg{
+    
+}
+
+.thiImg{
+    width: 447px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+    
+}
+
+.headname{
+    color: #fff;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    font-size: 6em;
+    letter-spacing: 6px;
+    text-shadow: 4px 7px 9px #000;
+}
+
+.mainCard{
+    background: url(/images/icon\ panel\ background.png);
+    width: 100%;
+    height: 20vh;
+    border-radius: 28px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainBg{
+    background: #000000d6;
+    width: 100%;
+    height: 100%;
+    /* backdrop-filter: blur(5px); */
+    border-radius: 28px;
+    color: #fff;
+}
+
+
+.logomen{
+    position: absolute;
+    top: 0;
+    margin-top: -20px;
+    height: 185px;
+    position: relative;
+}
+
+.menu{
+    background: url(/images/metric\ data\ background.jpg);
+    height: 98vh;
+    width: 100%;
+    margin-right: 15px;
+    border-radius: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.colBg{
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.73)  , #0c0c0cd7);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px) grayscale(1);
+    border-radius: 28px;
+}
+.row{
+    height: 100vh;
+}
+
+.boxbg{
+    background: #00000056;
+    padding: 10px 20px;
+    border-radius:8px;
+}
+
+.in{
+    font-size: 11px;
+}
+
+.btn-white{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.992)  , #aeaeae);
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    color: #000;
+    border-radius: 0;
+}
+
+.btn-white:hover{
+    color: #000;
+}
+
+.containerbox{
+    width: 30%;
+}
+
+.tab{
+    background: #ffffff33;
+    padding: 10px 20px;
+    border-radius:8px;
+}
