@@ -221,9 +221,9 @@
       }, []);
     
       const ctx = document.getElementById('okcanvas').getContext('2d');
-      const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
-      gradient.addColorStop(0, '#9a0dfd');
-      gradient.addColorStop(1, '#0d6efd');
+      const gradient = ctx.createLinearGradient(0, 0, 0, 220);
+      gradient.addColorStop(0, '#fffff0');
+      gradient.addColorStop(1, '#00000063');
     
       new Chart(
         document.getElementById('okcanvas'),
@@ -241,7 +241,7 @@
                 pointBackgroundColor: '#fff',
                 pointRadius: 0,
                 fill: true,
-                backgroundColor: '#aaa',
+                backgroundColor: gradient,
               },
             ],
           },
