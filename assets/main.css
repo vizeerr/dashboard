@@ -1,3 +1,45 @@
+
+
+@font-face {
+    font-family: 'aspekta';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/AspektaVF.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'nexa';
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/Nexa-Heavy.ttf');
+  }
+  
+  @font-face {
+    font-family: 'tommy';
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf');
+  }
+  @font-face {
+    font-family: 'quantum';
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/Quantum.otf');
+  }
+  @font-face {
+    font-family: 'momcake';
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/Momcake-Bold.otf');
+  }
+  @font-face {
+    font-family: 'devalencia';
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/de-valencia-beta.otf');
+  }
+
 body{
     /* background-color: red; */
     width: 100%;
@@ -5,6 +47,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'aspekta';
 }
 
 .imgMain{
@@ -17,7 +60,22 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+.momck{
+    font-family: 'momcake';
+    line-height: 25px;
+    
+}
+.tom{
+    font-family: 'tommy';
+}
 
+.stat{
+    font-family: 'quantum';
+    background-image: linear-gradient(45deg, #a91312 , #fb5958);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
 .col-5{
     width: 38% !important;
@@ -83,8 +141,8 @@ body{
     font-weight: 700;
     transform: rotate(-90deg);
     font-size: 6em;
-    letter-spacing: 6px;
     text-shadow: 4px 7px 9px #000;
+    font-family: 'nexa';
 }
 
 .mainCard{
@@ -149,7 +207,7 @@ body{
 }
 
 .btn-white{
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.992)  , #aeaeae);
+    background: linear-gradient(to right, #fffff0   , #98998f);
     width: 100%;
     font-size: 12px;
     font-weight: 700;
@@ -170,4 +228,90 @@ body{
     background: #ffffff33;
     padding: 10px 20px;
     border-radius:8px;
+}
+
+.cpy{
+    background: #00000069;
+    padding: 8px 25px;
+    border: 1px solid #aaa;
+}
+
+#slider .rs-range-color  {
+    background-color: rgb(253, 253, 253) ;
+}
+#slider .rs-handle  {
+    background-color: #000000 ;
+    border: 5px solid rgb(255, 255, 255) ;
+}
+
+.rs-bg-color,.rs-control .rs-split .rs-path, .rs-control .rs-overlay1, .rs-control .rs-overlay2{
+    background: #0000 !important;
+}
+
+.rs-border {
+    border: 3px solid rgb(246, 246, 244) !important;
+}
+
+.rs-block{
+    padding: 0px !important;
+}
+
+.rs-seperator{
+    display: none !important;
+}
+
+.rs-full{
+    width: 200px !important;
+    height: 200px !important;
+}
+
+#slider .rs-handle{
+    margin: -8.5px 0px 0px -5.09091px !important;
+    font-family: 'devalencia';
+}
+
+#slider{
+    position: relative;
+    top: 15px;
+}
+
+.leftcon .tab{
+    width: 40%;
+}
+
+.beltab{
+    background: linear-gradient(to right, #fffff0   , #98998f);
+    padding:3px;
+    border-radius: 15px;
+}
+
+.beltab .sec{
+    padding: 10px 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.beltab .sec p{
+    font-size: 8px;
+}
+
+.btn-primary{
+    padding:5px  30px;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #fffff0   , #98998f);
+    border: none;
+}
+
+.rs-tooltip-text{
+    font-family:'devalencia' !important ;
+    font-size: 2em !important;
+}
+
+.rs-full .rs-tooltip{
+    top: 50% !important;
+    right: 0 !important;
 }
